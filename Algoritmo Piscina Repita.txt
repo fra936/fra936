@@ -1,0 +1,36 @@
+algoritmo "Piscina"
+
+var
+   Volume, Comprimento, Largura, Profundidade: Real
+   Resp : Caracter
+
+inicio
+   // Apresenta a identidade deste programa
+   Escreval("Este programa calcula m³ e m² de uma piscina retangular mostra o resultado e entra no loop Repita")
+   // Controle de repetição que testa os calculos no fim -> Sempre entre no laço pelo menos 1 vez
+   // Saltar linha em branco
+   Repita
+        Escreval
+        Escreva("Digite o Comprimento: ")
+        Leia(Comprimento)
+        Escreva("Digite a Largura: ")
+        Leia(Largura)
+        Escreva("Digite a Profundidade: ")
+        Leia(Profundidade)
+        // Calcular e mostrar volume da piscina em m³ e litros e area ocupada por essa piscina em m²
+        Volume <- Comprimento * Largura * Profundidade
+        Escreva("O Volume é: " , volume, " m³ ")
+        Volume <- Volume * 1000
+        Escreva("O Litro é: " , Volume, " Litros ")
+        Volume <- Comprimento * Largura
+        Escreval("Area é: " , Volume, " m² ")
+        Escreval("Deseja executar novo calculo do programa? (s/n)")
+        Escreva("s - s ")
+        Escreva("n - n ")
+        Leia(resp)
+   Ate resp = "n"
+   Fimrepita
+   Escreval
+   Escreval("Obrigado por utilizar o programa Piscina!")
+fimalgoritmo
+
