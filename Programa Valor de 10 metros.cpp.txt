@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main (){	
+	int m;
+	printf("Digite metros: ");
+	fflush(stdin);
+	scanf("%d" , &m);
+	printf("\n decimetros: %d dm\n", m*10);
+	printf("centimetros: %d cm \n", m*100);
+	printf("milimetros: %d mm", m*1000);
+	fflush(stdin);
+	getchar();
+	return(0);
+}
